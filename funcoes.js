@@ -17,6 +17,8 @@ for(let i = 0; i < funcoes.length; i++){
 
 console.log(frase)
 
+// -------------------------------------------
+
 
 const drobo1 = (number = 0) => {
     return 2 * number
@@ -43,8 +45,7 @@ const drobo5 = () => 3 > 4 ? 'sim':'não'
 
 console.log(drobo5())
 
-
-
+//-------------------------------------------------
 
 const myFunc = callback => {
     const value = 77
@@ -53,6 +54,7 @@ const myFunc = callback => {
 
 myFunc( number => console.log(number) )
 
+//------------------------------------------------
 
 const socialNetworks = [ 'youtube', 'twitter', 'instagram', 'facebook']
 
@@ -61,3 +63,17 @@ const logArrayInfo = (socialNetwork, index, array) => {
 }
 
 socialNetworks.forEach( logArrayInfo )
+
+//------------------------------------------------
+
+const ul = document.querySelector(`[data-js="ul"]`)
+
+const socialNetworks2 = [ 'youtube', 'twitter', 'instagram', 'facebook']
+
+let HTMLTemplate = ''
+
+socialNetworks2.forEach(socialNetwork => {
+    HTMLTemplate +=`<li style="color: deepink;"> ${socialNetwork} </li>`
+})
+
+ul.innerHTML = HTMLTemplate
