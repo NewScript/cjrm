@@ -57,3 +57,23 @@ console.log(getTypeDefinition('undefined'))
 console.log(getTypeDefinition('object'))
 
 
+//-------------------------------
+
+let message = 'ola mundo'
+
+for(let i = 0;i < 5; i++){
+    message += `
+    - ${message}`
+}
+
+console.log(message)
+
+//---------------------------------
+
+
+if(true){
+    var dragon = 'Balerion'
+    console.log('Dentro do if: ',dragon);
+}
+
+console.log('Fora do if: ',dragon);
