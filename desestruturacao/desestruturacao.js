@@ -16,8 +16,10 @@ if(isNomeElaine){
 
 const h2 = document.querySelector('h2')
 
-const showCoordinates = ( { offsetX, offsetY } ) => {
-    h2.textContent = `Eixo X: ${offsetX} | EixoY: ${offsetY}`
+const showCoordinates = ( { offsetX, offsetY ,target:{tagName} } ) => {
+    h2.textContent = `Eixo X: ${offsetX} | EixoY: ${offsetY}
+    ----- ${tagName} ---- ${h2.localName}
+    `
 }
 
 document.addEventListener('mousemove', showCoordinates)
