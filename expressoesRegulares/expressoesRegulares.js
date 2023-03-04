@@ -1,9 +1,10 @@
-const btn = document.querySelector('button')
-const userNameInput = document.querySelector('#userName')
-const expressaoRegex = document.querySelector('#expressaoRegex')
-const result = document.querySelector('#result')
+const username = '111rogerm123'
+const pattern = /[a-z]{6}/
+// const result  = pattern.test(username)
 
-btn.addEventListener('click', ()=>{
-    const pattern = eval(expressaoRegex.value)
-    result.value = pattern.test(userNameInput.value)
-})
+
+
+const result = username.search(pattern)
+
+console.log(result)
+
