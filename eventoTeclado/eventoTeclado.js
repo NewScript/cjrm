@@ -1,4 +1,5 @@
 const form = document.querySelector('.sigup-form')
+// const userName = documet.querySelector('#userName')
 const feedBack = document.querySelector('#feedBack')
 
 const testUserName = userName => /^[a-zA-Z]{6,12}$/.test(userName) //<<<
@@ -16,6 +17,7 @@ form.addEventListener('submit', (event)=>{
 })
 
 form.userName.addEventListener('keyup', event => {
+    // Ou userName.addEventListener...
     // keyup -> Quando libera uma tecla pressionada
     const isAValidUserName = testUserName(event.target.value) //<<<
     if(isAValidUserName){
