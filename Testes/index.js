@@ -1,3 +1,5 @@
-const message = 'Ola mundo cruéééuuu'
+const randomNumbers = [ 36, 99, 37, 63]
 
-setTimeout(console.log, 2000, message, 'Fuuuuiiiii')
+const numbersGreaterThan37 = randomNumbers.filter( element => element > 37)
+
+console.log(numbersGreaterThan37)
